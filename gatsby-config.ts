@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Elphinstone Tech Blog`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.tech.elphinstone.com.pk`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -14,7 +14,11 @@ const config: GatsbyConfig = {
     options: {
       "url": "https://elphinstone.com.pk/graphql"
     }
-  }, "gatsby-plugin-postcss", "gatsby-plugin-sitemap"]
+  }, "gatsby-plugin-postcss", 
+  "gatsby-plugin-sitemap",
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,]
 };
 
 export default config;
